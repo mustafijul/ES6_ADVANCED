@@ -1,34 +1,27 @@
-// console.log("Bismillah");
+const numbers = [10, 40, 20, 60, 50];
+//  Array mapping
+// const doubled = [];
+// for (const double of numbers) {
+//   const result = double * 2;
+//   doubled.push(result);
+// }
+// console.log(doubled);
 
-// 1. math keyword normal and array
-// const numbers = (10, 20, 30, 40, 50);
-// console.log(Math.max(numbers));
+// function double(num) {
+//   return num * 2;
+// }
 
-// const numbers2 = [10, 20, 30, 70, 20];
+const numbers2 = [10, 40, 20, 60, 8000];
 
-// console.log(Math.max(...numbers2));
+// const doubleIt = (n) => n * 2;
+// const result = numbers2.map(doubleIt);
+// console.log(result);
+// !MOST EFFICIENT WAY
+const tripleIt = numbers2.map((n) => n * 3);
+// console.log(tripleIt);
 
-//* 2. Arrow function
+// * in string
+const name = ["tamim", "ramim", "hamim", "Ibrahim"];
 
-const add = (a, b) => a + b;
-// console.log(add(30, 600));
-const getPI = () => Math.PI;
-// console.log(getPI());
-const nums = (a, b, c) => {
-  const add = a + b + c;
-  const mult = a * b * c;
-  const result = add + mult;
-  return result;
-};
-
-// console.log(nums(3, 4, 9));
-
-//  obj and array destructuring
-
-const car = {
-  brand: "Toyota",
-  color: "Red",
-};
-
-const { brand, color } = car;
-console.log(brand, color);
+const length = name.map((nam) => nam.length);
+console.log(length);

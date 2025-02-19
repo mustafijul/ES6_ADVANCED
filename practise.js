@@ -32,3 +32,54 @@ const car = {
 
 const { brand, color } = car;
 // console.log(brand, color);
+
+// *Nested object
+const person = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    country: "USA",
+  },
+};
+
+// console.log(person.address.street);
+
+// Case 2
+const person2 = {
+  name: "John",
+  age: 30,
+  hobbies: ["reading", "gaming", "cycling"],
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    country: "USA",
+  },
+};
+
+// console.log(person2.hobbies[2]);
+
+// * forof loop and forIn loop
+
+const fruits = ["Apple", "Banana", "Cherry"];
+
+for (const fruit of fruits) {
+  //   console.log(fruit);
+}
+
+// * for in
+
+const person3 = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    country: "USA",
+  },
+};
+
+for (const person in person3) {
+  console.log(person);
+}
